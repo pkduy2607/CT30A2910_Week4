@@ -4,6 +4,7 @@ const container = document.querySelector(".show-container");
 
 submitButton.addEventListener("click", async (event) => {
     event.preventDefault();
+    container.innerHTML = "";
 
     const formData = new FormData(form);
     const showName = formData.get("showname");
